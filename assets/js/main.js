@@ -82,6 +82,22 @@ Crea 10 oggetti che rappresentano una zucchina.
 Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 Infine stampa separatamente quanto pesano i due gruppi di zucchine. */
 
+var zucchineLunghe = [];
+var pesoZucchineLunghe = 0;
+var zucchineCorte = [];
+var pesoZucchineCorte = 0;
+
+for (var i = 0; i < zucchine.length; i++) {
+    if (zucchine[i].lunghezza > 15) {
+        zucchineLunghe.push(zucchine[i]);
+        pesoZucchineLunghe += zucchine[i].peso;
+    } else {
+        zucchineCorte.push(zucchine[i]);
+        pesoZucchineCorte += zucchine[i].peso;
+    }
+}
+console.log("le zucchine lunghe pesano: " + pesoZucchineLunghe);
+console.log("le zucchine corte pesano: " + pesoZucchineCorte);
 
 /* Snack 3:
 Scrivi una funzione che accetti una stringa come argomento e la ritorni girata(es.Ciao -> oaiC)
