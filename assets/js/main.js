@@ -52,7 +52,7 @@ var zucchine = [
     },
 
     {
-        varieta: "Croocknet",
+        varieta: "Courgette",
         peso: 3,
         lunghezza: 19
     },
@@ -61,20 +61,33 @@ var zucchine = [
         varieta: "Zucchina genovese",
         peso: 2.3,
         lunghezza: 19
-    },
-
-    {
-        varieta: "Zucchino siciliano",
-        peso: 2,
-        lunghezza: 14
     }
-]
+];
+
+//stampiamo su htm le varietà
+for (var i = 0; i < zucchine.length; i++) {
+    document.getElementById("snack1").insertAdjacentHTML("beforeend",
+        `
+    <div class="zucchina_card">
+           <img class="img_zucc" src="./assets/img/${i}.jpg" alt="">
+            <h5 class="nome"></h5>
+            <span> <strong>Varietà:</strong> ${zucchine[i].varieta}</span>
+            <span> <strong>Peso:</strong> ${zucchine[i].peso} </span>
+            <span> <strong>Lunghezza:</strong>  ${zucchine[i].lunghezza}</span >
+    </div >
+        ` )
+}
 
 var pesoTotale = 0;
 for (var i = 0; i < zucchine.length; i++) {
     pesoTotale += zucchine[i].peso;
 }
-console.log("le zucchine tutte insieme pesano: " + pesoTotale);
+document.querySelector("section").insertAdjacentHTML("beforeend",
+    `
+<div class="div_risultato">
+<span  class="risultato"> Il peso totale delle zucchine è : ${pesoTotale} Kg</span>
+</div >
+    ` )
 
 
 /* Snack 2:

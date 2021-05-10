@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.zucchina_card{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 20px;
+    margin:10px;
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.img_zucc{
+    height: 180px;
+    width: 100%;
+}
+.div_risultato{
+    font-size: 2rem;
+    margin: 30px;
+    font-weight: bolder;
+    text-align: center;
+ 
+}
+.risultato{
+    padding: 15px 20px;
+    background-color: rgba(0, 236, 34, 0.3);
+    border-radius: 0.5rem;
+}
