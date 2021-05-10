@@ -102,6 +102,16 @@ console.log("le zucchine corte pesano: " + pesoZucchineCorte);
 /* Snack 3:
 Scrivi una funzione che accetti una stringa come argomento e la ritorni girata(es.Ciao -> oaiC)
 */
+function reverseWord(stringa) {
+    var reverse = []
+    for (var i = 0; i < stringa.length; i++) {
+        reverse.unshift(stringa[i])
+    }
+    reverse = reverse.join("")
+    return reverse;
+}
+console.log(reverseWord("ciao"));
+
 /*Snack 4:
 Scrivi una funzione che fonda due array(aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a, b, c], [1, 2, 3]→[a, 1, b, 2, c, 3]. */
