@@ -115,6 +115,19 @@ console.log(reverseWord("ciao"));
 /*Snack 4:
 Scrivi una funzione che fonda due array(aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a, b, c], [1, 2, 3]→[a, 1, b, 2, c, 3]. */
+function mergeArray(array1, array2) {
+    var arrayMerged = [];
+    if (array1.length == array2.length) {
+        for (var i = 0; i < array1.length; i++) {
+            arrayMerged.push(array1[i], array2[i]);
+            console.log(arrayMerged);
+        }
+        return arrayMerged;
+    } else {
+        alert("errore le due array non hanno la stessa lunghezza")
+    }
+}
+console.log(mergeArray("ciao", "1234"));
 
 /* Snack 5:
 Scrivi una funzione che accetti tre argomenti:
