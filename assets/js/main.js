@@ -133,3 +133,16 @@ console.log(mergeArray("ciao", "1234"));
 Scrivi una funzione che accetti tre argomenti:
 un array e due numeri(“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b” */
+
+function arrayElementSelector(array1, a, b) {
+    var newArray = []
+    if (a < b && array1.length > b) {
+        for (var i = a; i < b; i++) {
+            newArray.push(array1[(i)]);
+        }
+        return newArray
+    } else {
+        alert("ATTENZIONE!!! il valore a è maggiore di b o b è maggiore della lunghezza dell'array")
+    }
+}
+console.log(arrayElementSelector("aristogatti", 3, 8));
