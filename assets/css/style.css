@@ -44,3 +44,24 @@ h1{
 .bg_red{
     background-color: rgba(255, 40, 40, 0.3);
 }
+input, #parola_reverse{
+    font-size: 3rem;
+    width: 45%;
+    border-radius: 1rem;
+    margin: 20px 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 3px solid black;
+    margin: 10px;
+    color: white;
+    background-color: rgb(106, 58, 148);
+}

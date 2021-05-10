@@ -116,7 +116,7 @@ document.querySelector("#snack2").insertAdjacentHTML("beforeend",
     `
 <div class="div_risultato">
 <span  class="risultato bg_red"> Il peso totale delle zucchine corte è : ${pesoZucchineCorte} Kg</span>
-<span  class="risultato bg_red"> Il peso totale delle zucchine corte è : ${pesoZucchineLunghe} Kg</span>
+<span  class="risultato bg_red"> Il peso totale delle zucchine lunghe è : ${pesoZucchineLunghe} Kg</span>
 </div >
     ` )
 
@@ -131,7 +131,9 @@ function reverseWord(stringa) {
     reverse = reverse.join("")
     return reverse;
 }
-console.log(reverseWord("ciao"));
+document.querySelector(".reverse_word").addEventListener("click", function () {
+    document.querySelector("#parola_reverse").innerHTML = "parola ribaltata: <br>" + reverseWord(document.querySelector(".input").value)
+})
 
 /*Snack 4:
 Scrivi una funzione che fonda due array(aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
